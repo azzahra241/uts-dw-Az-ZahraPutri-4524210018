@@ -100,14 +100,10 @@ input[type="text"], select, textarea {
     font-size: 1rem;
 }
 
-@media (min-width: 600px) {
-    header h1 {
-        margin-bottom: 1.2rem;
-    }
-
-    header p {
-        margin-top: 1.2rem;
-    }
+@media (min-width: 800px) {
+    .main-container {
+    grid-template-columns: 1fr 1fr;
+    } 
 }
 
 footer {
