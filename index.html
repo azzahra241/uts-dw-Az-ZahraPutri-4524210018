@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Playlist Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Mood Playlist Generator</h1>
+        <p>Buat playlist sesuai hatimu, secara real-time!</p>
+    </header>
+
+    <main class="main-container">
+        <form id="playlist-form">
+            <fieldset>
+                <legend>Isi Data Playlist</legend>
+
+                <label for="playlist-name">Nama Playlist</label>
+                <input type="text" id="playlist-name" placeholder="Contoh: Morning Vibes" />
+
+                <label for="playlist-mood">Mood</label>
+                <select id="playlist-mood">
+                    <option value="">  Pilih Suasana Hati  </option>
+                    <option value="happy">😁 Happy</option>
+                    <option value="chill">😎 Chill</option>
+                    <option value="sad">😞 Sad</option>
+                    <option value="energetic">🔥 Energetic</option>
+                </select>
+
+                <label for="playlist-desc">Deskripsi Playlist</label>
+                <textarea id="playlist-desc" rows="3" placeholder="Tuliskan deskripsi singkat playlist kamu"></textarea>
+            </fieldset>
+        </form>
+
+        <section id="preview" class="preview-card">
+            <h2 id="preview-name">Judul Playlist</h2>
+            <p id="preview-mood">Mood</p>
+            <p id="preview-desc">Deskripsi playlist kamu akan muncul di sini</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Mood Playlist Generator | Dibuat oleh Az-Zahra Putri</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
