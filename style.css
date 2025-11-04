@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html{font-size: 100%;}
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #222;
+    line-height: 1.6rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    background-color: #4a90e2;
+    color: #ffff;
+}
+
+header h1 {
+    font-size: clamp(2rem, 1rem + 5vw, 3.5rem);
+    line-height: 1.25;
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 90%;
+}
+
+header p {
+    margin-top: 1rem;
+    font-size: clamp(1rem, 0.8rem + 2vw, 1.5rem);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+form {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.preview-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.4s ease;
+}
+
+.preview-card h2 {
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+    margin-bottom: 0.5rem;
+}
+
+.preview-card p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+    header h1 {
+        margin-bottom: 1.2rem;
+    }
+
+    header p {
+        margin-top: 1.2rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4a90e2;
+    color: #ffff;
+    margin-top: 2rem;
+}
